@@ -23,4 +23,4 @@ def create_engine(sqlite:bool = False):
         conn_str = f'sqlite///{arquivo_db}'
         __engine = sa.create_engine(url=conn_str, echo=False, connect_args={"check_same_thread": False})
     else:
-        conn_str = "mysql://root:''@localhost:3306/jogocentral"
+        conn_str = "mysql://root: @localhost:3306/jogocentral"
